@@ -17,8 +17,6 @@ Uzunluk, format, ilk hane ve kontrol basamakları (10. ve 11. haneler) denetleni
 * TCKN'nin 1, 3, 5, 7 ve 9. hanelerinin toplamının 7 katından 2, 4, 6, 8. hanelerin toplamı çıkarılıp sonucun birler basamağı alındığında TCKN'nin 10. basamağı bulunmalıdır
 * TCKN'nin ilk 10 basamağının toplamının birler basamağı alındığında TCKN'nin 11. basamağı bulunmalıdır
 
----
-
 ## Özellikler
 
 * TypeScript desteği

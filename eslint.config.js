@@ -1,10 +1,18 @@
 const js = require('@eslint/js');
+const tseslint = require('typescript-eslint');
 
-module.exports = [
+module.exports = tseslint.config(
+	{
+		ignores: ['dist/**', 'examples/**', 'test/**', 'node_modules/**', '*.config.js'],
+	},
 	js.configs.recommended,
+	...tseslint.configs.recommended,
 	{
 		languageOptions: {
 			ecmaVersion: 'latest',
+			parserOptions: {
+				project: './tsconfig.json',
+			},
 		},
 		rules: {
 			'arrow-spacing': ['warn', { before: true, after: true }],
@@ -15,7 +23,6 @@ module.exports = [
 			curly: ['error', 'multi-line', 'consistent'],
 			'dot-location': ['error', 'property'],
 			'handle-callback-err': 'off',
-			indent: ['error', 'tab'],
 			'keyword-spacing': 'error',
 			'max-nested-callbacks': ['error', { max: 4 }],
 			'max-statements-per-line': ['error', { max: 2 }],
@@ -50,4 +57,4 @@ module.exports = [
 			yoda: 'error',
 		},
 	},
-];
+);

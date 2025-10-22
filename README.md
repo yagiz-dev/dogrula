@@ -1,6 +1,5 @@
 # Doğrula
-
-**TC Kimlik Numarası (TCKN) doğrulayan basit ve bir npm kütüphanesi.**
+**Türkiye Cumhuriyeti Kimlik Numaralarının (TCKN) biçimsel ve matematiksel geçerliliğini kontrol eden hafif bir kütüphane.**
 
 [`dogrula`](https://npmjs.com/package/dogrula), Türkiye Cumhuriyeti Kimlik Numaralarının biçimsel ve matematiksel geçerliliğini ek bir kütüphane kullanmadan kontrol eder.
 Uzunluk, format, ilk hane ve kontrol basamakları (10. ve 11. haneler) denetlenir.
@@ -9,30 +8,25 @@ Uzunluk, format, ilk hane ve kontrol basamakları (10. ve 11. haneler) denetleni
 
 İleride kütüphaneye vergi numarası, posta kodu, IBAN, telefon numarası gibi diğer numaraların da doğrulayıcıları eklenecektir.
 
-## Yapılan kontroller
-
+## Yapılan kontroller
 * TCKN 11 basamaklı bir sayı olmalıdır
 * TCKN tamamı aynı rakamdan oluşan bir sayı olmamalıdır (örn. 11111111111)
 * TCKN 0 ile başlayamaz
 * TCKN'nin 1, 3, 5, 7 ve 9. hanelerinin toplamının 7 katından 2, 4, 6, 8. hanelerin toplamı çıkarılıp sonucun birler basamağı alındığında TCKN'nin 10. basamağı bulunmalıdır
 * TCKN'nin ilk 10 basamağının toplamının birler basamağı alındığında TCKN'nin 11. basamağı bulunmalıdır
 
-## Özellikler
-
+## Özellikler
 * TypeScript desteği
 * Türkçe ve İngilizce hata mesajları
 * Ek kütüphane kullanımı yok
 
 ## Kurulum
-
 ```bash
 npm install dogrula
 ```
 
 ## Örnekler
-
-### Basit kullanım
-
+### Basit kullanım
 ```js
 const { TCKN } = require("dogrula");
 
@@ -47,7 +41,6 @@ if (tc.isValid()) {
 ```
 
 ### TypeScript
-
 ```ts
 import { TCKN, ValidationResult } from 'dogrula';
 
@@ -61,8 +54,7 @@ if (tc.isValid()) {
 }
 ```
 
-### İngilizce hata mesajları
-
+### İngilizce hata mesajları
 ```js
 const { TCKN, setLocale, getLocale, ErrorCode } = require("dogrula");
 
@@ -81,12 +73,10 @@ if (tc.isValid()) {
 ```
 
 ## Bana ulaşın
-
 Sorular, hata bildirimleri veya öneriler için bana ulaşabilirsiniz.
 
 * Twitter: [@yagiz_dev](https://x.com/yagiz_dev)
 * Eposta: hi@yagiz.dev
 
 ## Lisans
-
 MIT © 2025 [Yağızhan Burak Yakar](https://yagiz.dev)

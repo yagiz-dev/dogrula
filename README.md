@@ -1,2 +1,4 @@
 # dogrula
-TC Kimlik Numarası doğrulayan Javascript kütüphanesi
+A Javascript library to validate Turkish Republic Identity Numbers (TCKN)
+
+TC Kimlik Numarası (TCKN) doğrulayan Javascript kütüphanesi

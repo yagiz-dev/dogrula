@@ -1,0 +1,29 @@
+{
+  "name": "dogrula",
+  "version": "0.0.1",
+  "description": "A Javascript library to validate Turkish Republic Identity Numbers (TCKN)",
+  "author": "Yağızhan Burak Yakar <https://yagiz.dev>",
+  "keywords": [
+    "typescript",
+    "tckn",
+    "validator"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yagiz-dev/dogrula.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yagiz-dev/dogrula/issues"
+  },
+  "homepage": "https://github.com/yagiz-dev/dogrula#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "eslint": "^9.38.0"
+  }
+}

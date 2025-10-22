@@ -1,0 +1,17 @@
+# Source files
+src/
+examples/
+test/
+
+# Config files
+tsconfig.json
+eslint.config.js
+.gitignore
+
+# Development files
+*.log
+.DS_Store
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo

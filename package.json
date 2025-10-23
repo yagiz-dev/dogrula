@@ -1,6 +1,6 @@
 {
   "name": "dogrula",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Türkiye Cumhuriyeti Kimlik Numaralarının (TCKN) biçimsel ve matematiksel geçerliliğini kontrol eden kütüphane.",
   "author": "Yağızhan Burak Yakar <https://yagiz.dev>",
   "keywords": [
